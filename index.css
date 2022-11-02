@@ -1,0 +1,175 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    line-height: 25px;
+    /* background-color: #745d91; */
+    color: #231829;
+    overflow: hidden;
+
+    background: linear-gradient(90deg, #c86e9c 0%, #745d91 100%);
+}
+
+.hide {
+    opacity: 0;
+}
+  
+.span-score {
+    color: #cbdb5e;
+}
+  
+h1 {
+    text-align: center;
+}
+  
+.screen.up {
+    margin-top: -100vh;
+}
+  
+.screen.down {
+    top: 0;
+}
+  
+.screen {
+    transition: margin 0.5s ease-out;
+    height: 100vh;
+    width: 100vw;
+}
+  
+/* Первый экран */
+.start {
+    display: flex;
+    flex-direction: column;
+}
+
+.plot {
+    max-width: 400px;
+}
+  
+.start-content {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+  
+.choice {    
+    max-width: 300px;
+}
+  
+.time-list {
+    list-style: none;
+}
+  
+.btn {
+    margin-top: 10px;
+    
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 15px;
+}
+  
+.btn:hover {
+    color: #fbc058;
+}
+  
+li {
+    display: flex;
+    column-gap: 10px;
+}
+  
+.prompt {
+    font-size: 10px;
+    
+    color: #fbc058;
+    opacity: 0;
+}
+  
+/* Игра */
+.game {  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+  
+  
+.conditions {
+    display: flex;
+    align-items: center;
+    column-gap: 400px;
+}
+  
+.potion-example {
+    height: 50px;
+}
+  
+.board {
+    margin-top: 30px;
+      
+    width: 400px;
+    
+    flex-wrap: wrap;
+}
+  
+.potion {
+    cursor: pointer;
+    
+    margin: 20px;
+    
+    height: 50px;
+    border-radius: 10px;
+}
+  
+.magic-pot {
+    margin-top: 50px;
+    
+    display: flex;
+    align-items: center;
+    
+}
+  
+.magic-pot__img {
+    height: 200px;
+}
+  
+  
+/* Третий */
+.magic-item__img {
+    height: 100px;
+}
+  
+.hide {
+    opacity: 0;
+}
+  
+.img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.result {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+  
+.result-text {
+    max-width: 400px;
+}
+  
+.try-again {
+    margin-top: 50px;
+}
+
+.time-btn:hover+.prompt {
+    opacity: 1;
+}
+
+
+
+  
+* {cursor: url(https://cur.cursors-4u.net/user/use-1/use160.cur), auto !important;}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css"/>
+  <style>@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+</style>
+</head>
+<body>
+  
+  <div class="screen start">
+    <h1>Зельеварение</h1>
+    <div class="start-content">
+      <div class="plot">
+       <p>Пуф! Злая ведьма похитила тебя и держит в своем волшебном замке, из которого не так просто выбраться. 
+        На дверях и окнах лежат сложные заклинания, разрушить которые может волшебное зелье. Пока ведьма отвлеклась, 
+        у тебя есть немного времени, чтобы приготовить нужное зелье из <span class="span-score">15</span>-ти компонентов. 
+        Поторопись!</p>
+     </div> 
+      <div class="choice">
+       <p>Выберите уровень сложности игры</p>
+        <ul class="time-list" id="time-list">
+          <li>
+            <button class="btn time-btn" data-time="30">easy</button>
+            <p class="prompt" id="prompt-30">30 секунд</p>
+          </li>
+          <li>
+            <button class="btn time-btn" data-time="20">medium</button>
+            <p class="prompt" id="prompt-20">20 секунд</p>
+          </li>
+          <li>
+            <button class="btn time-btn" data-time="10">hard</button>
+            <p class="prompt" id="prompt-10">10 секунд</p>
+          </li>
+        </ul>
+     </div>   
+    </div>
+  </div>
+  
+  <div class="screen game">
+      <h3>Осталось <span id="time">00:00</span></h3>
+      <div class="conditions" id="conditions">
+        <div class="condition"></div>
+        <div class="score-table">Счёт: <span class="score"></span></div>
+      </div>
+      <div class="board" id="board"></div>
+      <div class="magic-pot" id="board">
+        <img class="magic-pot__img" src="./assets/magic-pot.png" alt="">
+      </div>
+    
+  </div>
+  
+  <div class="screen result">
+    <h1>Cчет: <span class="result-score"></span></h1>
+    <p class="result-text"></p> 
+    <img class="magic-item__img">
+    
+    <button class="btn try-again">Try again</button>
+  </div>
+
+  <script type="module" src="./src/index.js" defer></script>
+</body>
+</html> 
+
